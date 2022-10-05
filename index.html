@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>StarWars</title>
+</head>
+<body>
+
+    <div id="container">
+        <div id="tabs">
+            <p id="lt" class="tabs" onclick="loginTabFun()">Entrar</p>
+            <p id="rt" class="tabs" onclick="regTabFun()">Registra-se</p>
+
+            <div id="clear"></div>
+        </div>
+
+        <div id="cont">
+            <div id="login" class="comm">
+                <img width="300px" style="border-radius: 10px 30px ; border: 2px solid yellow" src="IMG/Star_Wars_Logo.svg.webp" alt="">
+                <h3>StarLogin</h3>
+
+                <input  id="se" type="email" placeholder="Email" required/>
+                <input id="sp" type="password" placeholder="Senha" required/>
+                <input type="submit" onclick="login()" value="Entrar"/>
+
+                <p onclick="forTabFun()">Esqueceu a senha ?</p>
+            </div>
+            <div id="register" class="comm">
+                <h3>Registre-se</h3>
+
+                <input id="re" type="email" placeholder="Email" required/>
+                <input id="rp" type="password" placeholder="Senha" required/>
+                <input id="rrp" type="password" placeholder="Digite mais uma vez" required/>
+                <input type="submit" onclick="register()" value="Registrar"/>
+
+            </div >
+            <div id="forgot" class="comm">
+            <h3>Esqueceu a Senha</h3>
+            <div>
+                <input id="fe" type="email" placeholder="Email" required/>
+                <input type="submit" onclick="forgot()" value="Lembrar"/>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
