@@ -98,7 +98,7 @@ var emailArray=[];
                 return ;
             }
             else {
-                window.location.href = "./pages/Dashboard.html";
+                window.location.href = 'https://apistarwars.vercel.app/';
 
                 document.getElementById("se").value ="";
                 document.getElementById("sp").value="";

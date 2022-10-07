@@ -8,10 +8,11 @@ body {
 }
 #container {
     text-align: center;
-    width: 450px;
+    max-width: 80vw;
     margin: 0 auto;
     margin-top: 10px;
 }
+
 .tabs {
     display: table-cell;
     width: 30%;
@@ -101,4 +102,36 @@ p {
     padding: 10px 15px;
     font-size: 1.3em;
     color: #ffffff;
+}
+
+
+@media (max-width: 380px){
+    #cont #login img{
+        width: 200px;
+    }
+
+    #se, #sp{
+        margin-left: auto;
+        margin-right: auto;
+        width: 140px;
+    }
+
+    #lt, #rt{
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        width: 172px;
+        border: 1px solid black;
+        color: black;
+        background-color: yellow;
+    }
+    
+    input[type="submit"]:hover {
+        cursor: pointer;
+        color: yellow;
+        background-color: black;
+        border: 1px solid yellow;
+        transition: 1s ease;
+    }
 }
